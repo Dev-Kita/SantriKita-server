@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lesson_histories",
+  "info": {
+    "name": "LessonHistory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pelajaran": {
+      "type": "string",
+      "required": true
+    },
+    "tanggal": {
+      "type": "string",
+      "required": true
+    },
+    "pengajar": {
+      "type": "string",
+      "required": true
+    },
+    "keterangan": {
+      "type": "text"
+    },
+    "students": {
+      "collection": "student",
+      "via": "lesson_histories",
+      "dominant": true
+    }
+  }
+}

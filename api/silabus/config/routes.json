@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/silabuses",
+      "handler": "silabus.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/silabuses/count",
+      "handler": "silabus.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/silabuses/:id",
+      "handler": "silabus.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/silabuses",
+      "handler": "silabus.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/silabuses/:id",
+      "handler": "silabus.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/silabuses/:id",
+      "handler": "silabus.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

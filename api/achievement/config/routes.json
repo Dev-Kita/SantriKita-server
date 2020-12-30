@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/achievements",
+      "handler": "achievement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/achievements/count",
+      "handler": "achievement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/achievements/:id",
+      "handler": "achievement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/achievements",
+      "handler": "achievement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/achievements/:id",
+      "handler": "achievement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/achievements/:id",
+      "handler": "achievement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "violations",
+  "info": {
+    "name": "Violation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pelanggaran": {
+      "type": "string"
+    },
+    "keterangan": {
+      "type": "text"
+    },
+    "tanggal": {
+      "type": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "student": {
+      "model": "student",
+      "via": "violations"
+    }
+  }
+}

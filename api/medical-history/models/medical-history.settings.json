@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medical_histories",
+  "info": {
+    "name": "MedicalHistory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "penyakit": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "keterangan": {
+      "type": "text"
+    },
+    "tanggal": {
+      "type": "date"
+    },
+    "student": {
+      "model": "student",
+      "via": "medical_histories"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "achievements",
+  "info": {
+    "name": "Achievement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "kegiatan_lomba": {
+      "type": "string"
+    },
+    "prestasi": {
+      "type": "string"
+    },
+    "lingkup": {
+      "type": "string"
+    },
+    "tahun": {
+      "type": "integer"
+    },
+    "student": {
+      "model": "student",
+      "via": "achievements"
+    },
+    "keterangan": {
+      "type": "text",
+      "default": "-"
+    }
+  }
+}

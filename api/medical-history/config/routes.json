@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/medical-histories",
+      "handler": "medical-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medical-histories/count",
+      "handler": "medical-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medical-histories/:id",
+      "handler": "medical-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/medical-histories",
+      "handler": "medical-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/medical-histories/:id",
+      "handler": "medical-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/medical-histories/:id",
+      "handler": "medical-history.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

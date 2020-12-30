@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lesson-histories",
+      "handler": "lesson-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lesson-histories/count",
+      "handler": "lesson-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lesson-histories/:id",
+      "handler": "lesson-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lesson-histories",
+      "handler": "lesson-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lesson-histories/:id",
+      "handler": "lesson-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lesson-histories/:id",
+      "handler": "lesson-history.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
