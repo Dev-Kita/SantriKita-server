@@ -23,8 +23,8 @@
       "type": "string"
     },
     "student": {
-      "model": "student",
-      "via": "violations"
+      "via": "violations",
+      "model": "student"
     }
   }
 }

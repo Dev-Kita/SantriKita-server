@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "students",
   "info": {
-    "name": "student"
+    "name": "student",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,9 +19,6 @@
       "type": "string",
       "required": true
     },
-    "tanggal_lahir": {
-      "type": "string"
-    },
     "tahun_masuk": {
       "type": "integer",
       "required": true
@@ -29,33 +27,40 @@
       "type": "integer"
     },
     "lesson_histories": {
-      "via": "students",
-      "collection": "lesson-history"
+      "collection": "lesson-history",
+      "via": "students"
     },
     "silabuses": {
-      "via": "students",
-      "collection": "silabus"
+      "collection": "silabus",
+      "via": "students"
     },
     "user": {
-      "via": "student",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "student"
     },
     "medical_histories": {
-      "via": "student",
-      "collection": "medical-history"
+      "collection": "medical-history",
+      "via": "student"
     },
     "bills": {
-      "via": "student",
-      "collection": "bill"
+      "collection": "bill",
+      "via": "student"
     },
     "achievements": {
-      "via": "student",
-      "collection": "achievement"
+      "collection": "achievement",
+      "via": "student"
     },
     "violations": {
-      "via": "student",
-      "collection": "violation"
+      "collection": "violation",
+      "via": "student"
+    },
+    "tanggal_lahir": {
+      "type": "date"
+    },
+    "nis": {
+      "type": "biginteger",
+      "required": true
     }
   }
 }

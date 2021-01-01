@@ -24,8 +24,8 @@
       "type": "date"
     },
     "student": {
-      "model": "student",
-      "via": "medical_histories"
+      "via": "medical_histories",
+      "model": "student"
     }
   }
 }

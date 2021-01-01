@@ -26,8 +26,8 @@
       "type": "text"
     },
     "students": {
-      "collection": "student",
       "via": "lesson_histories",
+      "collection": "student",
       "dominant": true
     }
   }

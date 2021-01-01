@@ -23,8 +23,8 @@
       "type": "integer"
     },
     "student": {
-      "model": "student",
-      "via": "achievements"
+      "via": "achievements",
+      "model": "student"
     },
     "keterangan": {
       "type": "text",
