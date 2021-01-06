@@ -564,7 +564,6 @@
             "required": [
               "id",
               "nama",
-              "classroom",
               "tahun_masuk",
               "nis"
             ],
@@ -573,9 +572,6 @@
                 "type": "string"
               },
               "nama": {
-                "type": "string"
-              },
-              "classroom": {
                 "type": "string"
               },
               "tahun_masuk": {
@@ -628,6 +624,9 @@
               },
               "nis": {
                 "type": "integer"
+              },
+              "kelas": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

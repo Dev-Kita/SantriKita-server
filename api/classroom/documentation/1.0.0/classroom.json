@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/silabuses": {
+    "/classrooms": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Silabus"
+                    "$ref": "#/components/schemas/Classroom"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Silabus"
+          "Classroom"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Silabus"
+                  "$ref": "#/components/schemas/Classroom"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Silabus"
+          "Classroom"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewSilabus"
+                "$ref": "#/components/schemas/NewClassroom"
               }
             }
           }
         }
       }
     },
-    "/silabuses/count": {
+    "/classrooms/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Silabus"
+          "Classroom"
         ],
         "parameters": []
       }
     },
-    "/silabuses/{id}": {
+    "/classrooms/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Silabus"
+                  "$ref": "#/components/schemas/Classroom"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Silabus"
+          "Classroom"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Silabus"
+                  "$ref": "#/components/schemas/Classroom"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Silabus"
+          "Classroom"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewSilabus"
+                "$ref": "#/components/schemas/NewClassroom"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Silabus"
+          "Classroom"
         ],
         "parameters": [
           {
@@ -514,27 +514,19 @@
   },
   "components": {
     "schemas": {
-      "Silabus": {
+      "Classroom": {
         "required": [
-          "id"
+          "id",
+          "kelas"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "pelajaran": {
+          "kelas": {
             "type": "string"
           },
-          "bab": {
-            "type": "string"
-          },
-          "kompetensi_dasar": {
-            "type": "string"
-          },
-          "keterangan": {
-            "type": "string"
-          },
-          "classroom": {
+          "pembimbing": {
             "type": "string"
           },
           "students": {
@@ -619,21 +611,29 @@
               }
             }
           },
-          "classrooms": {
+          "silabuses": {
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "kelas"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "kelas": {
+                "pelajaran": {
                   "type": "string"
                 },
-                "pembimbing": {
+                "bab": {
+                  "type": "string"
+                },
+                "kompetensi_dasar": {
+                  "type": "string"
+                },
+                "keterangan": {
+                  "type": "string"
+                },
+                "classroom": {
                   "type": "string"
                 },
                 "students": {
@@ -642,7 +642,7 @@
                     "type": "string"
                   }
                 },
-                "silabuses": {
+                "classrooms": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -666,21 +666,15 @@
           }
         }
       },
-      "NewSilabus": {
+      "NewClassroom": {
+        "required": [
+          "kelas"
+        ],
         "properties": {
-          "pelajaran": {
+          "kelas": {
             "type": "string"
           },
-          "bab": {
-            "type": "string"
-          },
-          "kompetensi_dasar": {
-            "type": "string"
-          },
-          "keterangan": {
-            "type": "string"
-          },
-          "classroom": {
+          "pembimbing": {
             "type": "string"
           },
           "students": {
@@ -689,7 +683,7 @@
               "type": "string"
             }
           },
-          "classrooms": {
+          "silabuses": {
             "type": "array",
             "items": {
               "type": "string"
@@ -711,7 +705,7 @@
   },
   "tags": [
     {
-      "name": "Silabus"
+      "name": "Classroom"
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classrooms",
+  "info": {
+    "name": "classroom",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "kelas": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "pembimbing": {
+      "type": "string"
+    },
+    "students": {
+      "collection": "student",
+      "via": "kelas"
+    },
+    "silabuses": {
+      "via": "classrooms",
+      "collection": "silabus"
+    }
+  }
+}

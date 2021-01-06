@@ -518,7 +518,6 @@
         "required": [
           "id",
           "nama",
-          "classroom",
           "tahun_masuk",
           "nis"
         ],
@@ -527,9 +526,6 @@
             "type": "string"
           },
           "nama": {
-            "type": "string"
-          },
-          "classroom": {
             "type": "string"
           },
           "tahun_masuk": {
@@ -607,6 +603,12 @@
                   "type": "string"
                 },
                 "students": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "classrooms": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -840,6 +842,44 @@
           "nis": {
             "type": "integer"
           },
+          "kelas": {
+            "required": [
+              "id",
+              "kelas"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kelas": {
+                "type": "string"
+              },
+              "pembimbing": {
+                "type": "string"
+              },
+              "students": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "silabuses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -849,15 +889,11 @@
       "NewStudent": {
         "required": [
           "nama",
-          "classroom",
           "tahun_masuk",
           "nis"
         ],
         "properties": {
           "nama": {
-            "type": "string"
-          },
-          "classroom": {
             "type": "string"
           },
           "tahun_masuk": {
@@ -911,6 +947,9 @@
           },
           "nis": {
             "type": "integer"
+          },
+          "kelas": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

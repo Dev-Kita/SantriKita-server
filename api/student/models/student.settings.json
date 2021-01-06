@@ -15,10 +15,6 @@
       "type": "string",
       "required": true
     },
-    "classroom": {
-      "type": "string",
-      "required": true
-    },
     "tahun_masuk": {
       "type": "integer",
       "required": true
@@ -31,8 +27,8 @@
       "via": "students"
     },
     "silabuses": {
-      "collection": "silabus",
-      "via": "students"
+      "via": "students",
+      "collection": "silabus"
     },
     "user": {
       "plugin": "users-permissions",
@@ -61,6 +57,10 @@
     "nis": {
       "type": "biginteger",
       "required": true
+    },
+    "kelas": {
+      "via": "students",
+      "model": "classroom"
     }
   }
 }
