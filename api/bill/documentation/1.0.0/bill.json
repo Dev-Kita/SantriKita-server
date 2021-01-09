@@ -528,23 +528,6 @@
           "tahun": {
             "type": "integer"
           },
-          "bulan": {
-            "type": "string",
-            "enum": [
-              "Januari",
-              "Februari",
-              "Maret",
-              "April",
-              "Mei",
-              "Juni",
-              "Juli",
-              "Agustus",
-              "September",
-              "Oktober",
-              "November",
-              "Desember"
-            ]
-          },
           "nominal": {
             "type": "integer"
           },
@@ -556,7 +539,7 @@
             "type": "string",
             "format": "date"
           },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "Belum Dibayar"
           },
@@ -627,6 +610,9 @@
               }
             }
           },
+          "Keperluan": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -641,23 +627,6 @@
           "tahun": {
             "type": "integer"
           },
-          "bulan": {
-            "type": "string",
-            "enum": [
-              "Januari",
-              "Februari",
-              "Maret",
-              "April",
-              "Mei",
-              "Juni",
-              "Juli",
-              "Agustus",
-              "September",
-              "Oktober",
-              "November",
-              "Desember"
-            ]
-          },
           "nominal": {
             "type": "integer"
           },
@@ -669,11 +638,14 @@
             "type": "string",
             "format": "date"
           },
-          "Status": {
+          "status": {
             "type": "string",
             "default": "Belum Dibayar"
           },
           "student": {
+            "type": "string"
+          },
+          "Keperluan": {
             "type": "string"
           },
           "published_at": {

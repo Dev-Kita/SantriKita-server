@@ -32,8 +32,8 @@
       "via": "student"
     },
     "bills": {
-      "collection": "bill",
-      "via": "student"
+      "via": "student",
+      "collection": "bill"
     },
     "achievements": {
       "collection": "achievement",

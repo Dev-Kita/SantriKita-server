@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "bills",
   "info": {
-    "name": "Bill"
+    "name": "Bill",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,23 +17,6 @@
     "tahun": {
       "type": "integer"
     },
-    "bulan": {
-      "type": "enumeration",
-      "enum": [
-        "Januari",
-        "Februari",
-        "Maret",
-        "April",
-        "Mei",
-        "Juni",
-        "Juli",
-        "Agustus",
-        "September",
-        "Oktober",
-        "November",
-        "Desember"
-      ]
-    },
     "nominal": {
       "type": "biginteger"
     },
@@ -43,13 +27,16 @@
     "tanggal_pembayaran": {
       "type": "date"
     },
-    "Status": {
+    "status": {
       "type": "string",
       "default": "Belum Dibayar"
     },
     "student": {
-      "via": "bills",
-      "model": "student"
+      "model": "student",
+      "via": "bills"
+    },
+    "Keperluan": {
+      "type": "string"
     }
   }
 }

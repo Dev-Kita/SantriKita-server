@@ -636,9 +636,6 @@
                 "tahun": {
                   "type": "integer"
                 },
-                "bulan": {
-                  "type": "string"
-                },
                 "nominal": {
                   "type": "integer"
                 },
@@ -648,10 +645,13 @@
                 "tanggal_pembayaran": {
                   "type": "string"
                 },
-                "Status": {
+                "status": {
                   "type": "string"
                 },
                 "student": {
+                  "type": "string"
+                },
+                "Keperluan": {
                   "type": "string"
                 },
                 "published_at": {
