@@ -26,6 +26,10 @@
     "silabuses": {
       "via": "classrooms",
       "collection": "silabus"
+    },
+    "lesson_histories": {
+      "via": "classroom",
+      "collection": "lesson-history"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/06/2021 3:09:37 PM"
+    "x-generation-date": "01/09/2021 4:22:02 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6300,18 +6300,6 @@
               "tahun_keluar": {
                 "type": "integer"
               },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "user": {
                 "type": "string"
               },
@@ -6468,18 +6456,6 @@
               "tahun_keluar": {
                 "type": "integer"
               },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "user": {
                 "type": "string"
               },
@@ -6625,18 +6601,6 @@
                 "tahun_keluar": {
                   "type": "integer"
                 },
-                "lesson_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "silabuses": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "user": {
                   "type": "string"
                 },
@@ -6707,20 +6671,51 @@
                 "keterangan": {
                   "type": "string"
                 },
-                "classroom": {
-                  "type": "string"
-                },
-                "students": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "classrooms": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "lesson_histories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "pelajaran",
+                "tanggal",
+                "pengajar"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "pelajaran": {
+                  "type": "string"
+                },
+                "tanggal": {
+                  "type": "string"
+                },
+                "pengajar": {
+                  "type": "string"
+                },
+                "keterangan": {
+                  "type": "string"
+                },
+                "classroom": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6763,6 +6758,12 @@
               "type": "string"
             }
           },
+          "lesson_histories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6798,85 +6799,47 @@
           "keterangan": {
             "type": "string"
           },
-          "students": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "nama",
-                "tahun_masuk",
-                "nis"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama": {
-                  "type": "string"
-                },
-                "tahun_masuk": {
-                  "type": "integer"
-                },
-                "tahun_keluar": {
-                  "type": "integer"
-                },
-                "lesson_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "silabuses": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "user": {
-                  "type": "string"
-                },
-                "medical_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "bills": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "achievements": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "violations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tanggal_lahir": {
-                  "type": "string"
-                },
-                "nis": {
-                  "type": "integer"
-                },
-                "kelas": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "classroom": {
+            "required": [
+              "id",
+              "kelas"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kelas": {
+                "type": "string"
+              },
+              "pembimbing": {
+                "type": "string"
+              },
+              "students": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "silabuses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "lesson_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -6905,11 +6868,8 @@
           "keterangan": {
             "type": "string"
           },
-          "students": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "classroom": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6964,18 +6924,6 @@
               },
               "tahun_keluar": {
                 "type": "integer"
-              },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "user": {
                 "type": "string"
@@ -7083,91 +7031,6 @@
           "keterangan": {
             "type": "string"
           },
-          "classroom": {
-            "type": "string"
-          },
-          "students": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "nama",
-                "tahun_masuk",
-                "nis"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama": {
-                  "type": "string"
-                },
-                "tahun_masuk": {
-                  "type": "integer"
-                },
-                "tahun_keluar": {
-                  "type": "integer"
-                },
-                "lesson_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "silabuses": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "user": {
-                  "type": "string"
-                },
-                "medical_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "bills": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "achievements": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "violations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tanggal_lahir": {
-                  "type": "string"
-                },
-                "nis": {
-                  "type": "integer"
-                },
-                "kelas": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "classrooms": {
             "type": "array",
             "items": {
@@ -7192,6 +7055,12 @@
                   }
                 },
                 "silabuses": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "lesson_histories": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -7228,15 +7097,6 @@
           },
           "keterangan": {
             "type": "string"
-          },
-          "classroom": {
-            "type": "string"
-          },
-          "students": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "classrooms": {
             "type": "array",
@@ -7275,98 +7135,6 @@
           },
           "tahun_keluar": {
             "type": "integer"
-          },
-          "lesson_histories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "pelajaran",
-                "tanggal",
-                "pengajar"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "pelajaran": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "pengajar": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "students": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "silabuses": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "pelajaran": {
-                  "type": "string"
-                },
-                "bab": {
-                  "type": "string"
-                },
-                "kompetensi_dasar": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "classroom": {
-                  "type": "string"
-                },
-                "students": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "classrooms": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "user": {
             "required": [
@@ -7611,6 +7379,12 @@
                   "type": "string"
                 }
               },
+              "lesson_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -7643,18 +7417,6 @@
           },
           "tahun_keluar": {
             "type": "integer"
-          },
-          "lesson_histories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "silabuses": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "user": {
             "type": "string"
@@ -7745,18 +7507,6 @@
               },
               "tahun_keluar": {
                 "type": "integer"
-              },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "user": {
                 "type": "string"
@@ -8075,18 +7825,6 @@
               },
               "tahun_keluar": {
                 "type": "integer"
-              },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "user": {
                 "type": "string"

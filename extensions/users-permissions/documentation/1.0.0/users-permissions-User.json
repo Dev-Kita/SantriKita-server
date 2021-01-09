@@ -1271,18 +1271,6 @@
               "tahun_keluar": {
                 "type": "integer"
               },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "user": {
                 "type": "string"
               },

@@ -22,14 +22,6 @@
     "tahun_keluar": {
       "type": "integer"
     },
-    "lesson_histories": {
-      "collection": "lesson-history",
-      "via": "students"
-    },
-    "silabuses": {
-      "via": "students",
-      "collection": "silabus"
-    },
     "user": {
       "plugin": "users-permissions",
       "model": "user",

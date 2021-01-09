@@ -550,85 +550,47 @@
           "keterangan": {
             "type": "string"
           },
-          "students": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "nama",
-                "tahun_masuk",
-                "nis"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama": {
-                  "type": "string"
-                },
-                "tahun_masuk": {
-                  "type": "integer"
-                },
-                "tahun_keluar": {
-                  "type": "integer"
-                },
-                "lesson_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "silabuses": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "user": {
-                  "type": "string"
-                },
-                "medical_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "bills": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "achievements": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "violations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tanggal_lahir": {
-                  "type": "string"
-                },
-                "nis": {
-                  "type": "integer"
-                },
-                "kelas": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "classroom": {
+            "required": [
+              "id",
+              "kelas"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kelas": {
+                "type": "string"
+              },
+              "pembimbing": {
+                "type": "string"
+              },
+              "students": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "silabuses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "lesson_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -657,11 +619,8 @@
           "keterangan": {
             "type": "string"
           },
-          "students": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "classroom": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

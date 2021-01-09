@@ -23,14 +23,6 @@
     "keterangan": {
       "type": "text"
     },
-    "classroom": {
-      "type": "string"
-    },
-    "students": {
-      "collection": "student",
-      "via": "silabuses",
-      "dominant": true
-    },
     "classrooms": {
       "collection": "classroom",
       "via": "silabuses",
