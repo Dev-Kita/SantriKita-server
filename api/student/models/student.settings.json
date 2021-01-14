@@ -28,8 +28,8 @@
       "via": "student"
     },
     "medical_histories": {
-      "collection": "medical-history",
-      "via": "student"
+      "via": "student",
+      "collection": "medical-history"
     },
     "bills": {
       "via": "student",

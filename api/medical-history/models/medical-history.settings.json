@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "medical_histories",
   "info": {
-    "name": "MedicalHistory"
+    "name": "MedicalHistory",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -15,7 +16,8 @@
       "required": true
     },
     "status": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "keterangan": {
       "type": "text"
@@ -24,8 +26,17 @@
       "type": "date"
     },
     "student": {
-      "via": "medical_histories",
-      "model": "student"
+      "model": "student",
+      "via": "medical_histories"
+    },
+    "jenis": {
+      "type": "enumeration",
+      "enum": [
+        "Umum",
+        "Parah",
+        "Bawaan"
+      ],
+      "default": "Umum"
     }
   }
 }

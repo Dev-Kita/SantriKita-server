@@ -608,6 +608,9 @@
                 "student": {
                   "type": "string"
                 },
+                "jenis": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

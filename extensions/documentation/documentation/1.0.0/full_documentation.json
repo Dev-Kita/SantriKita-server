@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/10/2021 5:30:19 AM"
+    "x-generation-date": "01/14/2021 1:01:13 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6868,7 +6868,8 @@
             "type": "string"
           },
           "status": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "keterangan": {
             "type": "string"
@@ -6944,6 +6945,15 @@
               }
             }
           },
+          "jenis": {
+            "type": "string",
+            "default": "Umum",
+            "enum": [
+              "Umum",
+              "Parah",
+              "Bawaan"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6959,7 +6969,8 @@
             "type": "string"
           },
           "status": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "keterangan": {
             "type": "string"
@@ -6970,6 +6981,15 @@
           },
           "student": {
             "type": "string"
+          },
+          "jenis": {
+            "type": "string",
+            "default": "Umum",
+            "enum": [
+              "Umum",
+              "Parah",
+              "Bawaan"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -7180,6 +7200,9 @@
                   "type": "string"
                 },
                 "student": {
+                  "type": "string"
+                },
+                "jenis": {
                   "type": "string"
                 },
                 "published_at": {

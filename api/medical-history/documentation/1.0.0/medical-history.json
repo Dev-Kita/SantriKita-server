@@ -540,7 +540,8 @@
             "type": "string"
           },
           "status": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "keterangan": {
             "type": "string"
@@ -616,6 +617,15 @@
               }
             }
           },
+          "jenis": {
+            "type": "string",
+            "default": "Umum",
+            "enum": [
+              "Umum",
+              "Parah",
+              "Bawaan"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -631,7 +641,8 @@
             "type": "string"
           },
           "status": {
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
           },
           "keterangan": {
             "type": "string"
@@ -642,6 +653,15 @@
           },
           "student": {
             "type": "string"
+          },
+          "jenis": {
+            "type": "string",
+            "default": "Umum",
+            "enum": [
+              "Umum",
+              "Parah",
+              "Bawaan"
+            ]
           },
           "published_at": {
             "type": "string",
