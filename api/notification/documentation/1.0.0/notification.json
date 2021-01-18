@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/students": {
+    "/notifications": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Student"
+                    "$ref": "#/components/schemas/Notification"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Student"
+          "Notification"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Student"
+                  "$ref": "#/components/schemas/Notification"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Student"
+          "Notification"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewStudent"
+                "$ref": "#/components/schemas/NewNotification"
               }
             }
           }
         }
       }
     },
-    "/students/count": {
+    "/notifications/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Student"
+          "Notification"
         ],
         "parameters": []
       }
     },
-    "/students/{id}": {
+    "/notifications/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Student"
+                  "$ref": "#/components/schemas/Notification"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Student"
+          "Notification"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Student"
+                  "$ref": "#/components/schemas/Notification"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Student"
+          "Notification"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewStudent"
+                "$ref": "#/components/schemas/NewNotification"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Student"
+          "Notification"
         ],
         "parameters": [
           {
@@ -514,273 +514,84 @@
   },
   "components": {
     "schemas": {
-      "Student": {
+      "Notification": {
         "required": [
-          "id",
-          "nama",
-          "tahun_masuk",
-          "nis"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "nama": {
+          "notifikasi": {
             "type": "string"
           },
-          "tahun_masuk": {
-            "type": "integer"
+          "slug": {
+            "type": "string"
           },
-          "tahun_keluar": {
-            "type": "integer"
+          "terbaca": {
+            "type": "boolean",
+            "default": false
           },
-          "user": {
+          "student": {
             "required": [
               "id",
-              "username",
-              "email"
+              "nama",
+              "tahun_masuk",
+              "nis"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "username": {
+              "nama": {
                 "type": "string"
               },
-              "email": {
+              "tahun_masuk": {
+                "type": "integer"
+              },
+              "tahun_keluar": {
+                "type": "integer"
+              },
+              "user": {
                 "type": "string"
               },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "student": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "medical_histories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "penyakit"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "penyakit": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "boolean"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "student": {
-                  "type": "string"
-                },
-                "jenis": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+              "medical_histories": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
-              }
-            }
-          },
-          "bills": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "semester": {
-                  "type": "integer"
-                },
-                "tahun": {
-                  "type": "integer"
-                },
-                "nominal": {
-                  "type": "integer"
-                },
-                "nominal_dibayar": {
-                  "type": "integer"
-                },
-                "tanggal_pembayaran": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "string"
-                },
-                "student": {
-                  "type": "string"
-                },
-                "Keperluan": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+              },
+              "bills": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
-              }
-            }
-          },
-          "achievements": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "kegiatan_lomba": {
-                  "type": "string"
-                },
-                "prestasi": {
-                  "type": "string"
-                },
-                "lingkup": {
-                  "type": "string"
-                },
-                "tahun": {
-                  "type": "integer"
-                },
-                "student": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+              },
+              "achievements": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
-              }
-            }
-          },
-          "violations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "pelanggaran": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "string"
-                },
-                "student": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+              },
+              "violations": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
-              }
-            }
-          },
-          "tanggal_lahir": {
-            "type": "string",
-            "format": "date"
-          },
-          "nis": {
-            "type": "integer"
-          },
-          "kelas": {
-            "required": [
-              "id",
-              "kelas"
-            ],
-            "properties": {
-              "id": {
+              },
+              "tanggal_lahir": {
                 "type": "string"
+              },
+              "nis": {
+                "type": "integer"
               },
               "kelas": {
                 "type": "string"
               },
-              "pembimbing": {
+              "kamar": {
                 "type": "string"
               },
-              "students": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "lesson_histories": {
+              "notifications": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -797,45 +608,9 @@
               }
             }
           },
-          "kamar": {
-            "type": "string"
-          },
-          "notifications": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "notifikasi": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "string"
-                },
-                "terbaca": {
-                  "type": "boolean"
-                },
-                "student": {
-                  "type": "string"
-                },
-                "waktu": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "waktu": {
+            "type": "string",
+            "format": "date-time"
           },
           "published_at": {
             "type": "string",
@@ -843,67 +618,24 @@
           }
         }
       },
-      "NewStudent": {
-        "required": [
-          "nama",
-          "tahun_masuk",
-          "nis"
-        ],
+      "NewNotification": {
         "properties": {
-          "nama": {
+          "notifikasi": {
             "type": "string"
           },
-          "tahun_masuk": {
-            "type": "integer"
-          },
-          "tahun_keluar": {
-            "type": "integer"
-          },
-          "user": {
+          "slug": {
             "type": "string"
           },
-          "medical_histories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "terbaca": {
+            "type": "boolean",
+            "default": false
           },
-          "bills": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "student": {
+            "type": "string"
           },
-          "achievements": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "violations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "tanggal_lahir": {
+          "waktu": {
             "type": "string",
-            "format": "date"
-          },
-          "nis": {
-            "type": "integer"
-          },
-          "kelas": {
-            "type": "string"
-          },
-          "kamar": {
-            "type": "string"
-          },
-          "notifications": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "format": "date-time"
           },
           "published_at": {
             "type": "string",
@@ -921,7 +653,7 @@
   },
   "tags": [
     {
-      "name": "Student"
+      "name": "Notification"
     }
   ]
 }

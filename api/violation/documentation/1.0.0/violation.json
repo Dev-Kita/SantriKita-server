@@ -591,6 +591,15 @@
               "kelas": {
                 "type": "string"
               },
+              "kamar": {
+                "type": "string"
+              },
+              "notifications": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },

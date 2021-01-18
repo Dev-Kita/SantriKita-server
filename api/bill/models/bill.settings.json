@@ -32,8 +32,8 @@
       "default": "Belum Dibayar"
     },
     "student": {
-      "model": "student",
-      "via": "bills"
+      "via": "bills",
+      "model": "student"
     },
     "Keperluan": {
       "type": "string"

@@ -28,12 +28,12 @@
       "via": "student"
     },
     "medical_histories": {
-      "via": "student",
-      "collection": "medical-history"
+      "collection": "medical-history",
+      "via": "student"
     },
     "bills": {
-      "via": "student",
-      "collection": "bill"
+      "collection": "bill",
+      "via": "student"
     },
     "achievements": {
       "collection": "achievement",
@@ -51,8 +51,15 @@
       "required": true
     },
     "kelas": {
-      "via": "students",
-      "model": "classroom"
+      "model": "classroom",
+      "via": "students"
+    },
+    "kamar": {
+      "type": "string"
+    },
+    "notifications": {
+      "via": "student",
+      "collection": "notification"
     }
   }
 }

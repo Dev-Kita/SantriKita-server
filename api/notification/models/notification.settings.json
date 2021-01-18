@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notifications",
+  "info": {
+    "name": "Notification",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "notifikasi": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "terbaca": {
+      "type": "boolean",
+      "default": false
+    },
+    "student": {
+      "model": "student",
+      "via": "notifications"
+    },
+    "waktu": {
+      "type": "datetime"
+    }
+  }
+}

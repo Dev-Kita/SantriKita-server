@@ -20,8 +20,8 @@
       "type": "string"
     },
     "students": {
-      "collection": "student",
-      "via": "kelas"
+      "via": "kelas",
+      "collection": "student"
     },
     "silabuses": {
       "via": "classrooms",
