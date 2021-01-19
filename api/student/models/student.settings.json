@@ -58,8 +58,17 @@
       "type": "string"
     },
     "notifications": {
-      "via": "student",
-      "collection": "notification"
+      "collection": "notification",
+      "via": "student"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

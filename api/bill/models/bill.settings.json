@@ -35,8 +35,14 @@
       "via": "bills",
       "model": "student"
     },
-    "Keperluan": {
+    "keperluan": {
       "type": "string"
+    },
+    "keterangan": {
+      "type": "text"
+    },
+    "sisa_pembayaran": {
+      "type": "biginteger"
     }
   }
 }

@@ -22,8 +22,8 @@
       "default": false
     },
     "student": {
-      "model": "student",
-      "via": "notifications"
+      "via": "notifications",
+      "model": "student"
     },
     "waktu": {
       "type": "datetime"
