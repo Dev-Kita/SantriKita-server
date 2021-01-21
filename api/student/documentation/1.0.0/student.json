@@ -910,6 +910,9 @@
               }
             }
           },
+          "jenis_kelamin": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -977,6 +980,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "jenis_kelamin": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

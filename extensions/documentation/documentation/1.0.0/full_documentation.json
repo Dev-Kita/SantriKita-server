@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/19/2021 11:14:08 PM"
+    "x-generation-date": "01/21/2021 8:45:14 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6859,6 +6859,9 @@
               "photo": {
                 "type": "string"
               },
+              "jenis_kelamin": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -7008,6 +7011,9 @@
                 }
               },
               "photo": {
+                "type": "string"
+              },
+              "jenis_kelamin": {
                 "type": "string"
               },
               "published_at": {
@@ -7166,6 +7172,9 @@
                   }
                 },
                 "photo": {
+                  "type": "string"
+                },
+                "jenis_kelamin": {
                   "type": "string"
                 },
                 "published_at": {
@@ -7505,6 +7514,9 @@
               "photo": {
                 "type": "string"
               },
+              "jenis_kelamin": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -7658,6 +7670,9 @@
                 }
               },
               "photo": {
+                "type": "string"
+              },
+              "jenis_kelamin": {
                 "type": "string"
               },
               "published_at": {
@@ -8213,6 +8228,9 @@
               }
             }
           },
+          "jenis_kelamin": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8280,6 +8298,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "jenis_kelamin": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -8380,6 +8401,9 @@
                 }
               },
               "photo": {
+                "type": "string"
+              },
+              "jenis_kelamin": {
                 "type": "string"
               },
               "published_at": {
@@ -8710,6 +8734,9 @@
                 }
               },
               "photo": {
+                "type": "string"
+              },
+              "jenis_kelamin": {
                 "type": "string"
               },
               "published_at": {

@@ -611,6 +611,9 @@
               "photo": {
                 "type": "string"
               },
+              "jenis_kelamin": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
