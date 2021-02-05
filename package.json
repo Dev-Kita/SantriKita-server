@@ -1,5 +1,5 @@
 {
-  "name": "avocado-strapi",
+  "name": "santrikita-strapi",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -34,8 +34,8 @@
     "uuid": "f1218882-66bf-40d8-878e-fc6101889ff6"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
-    "npm": ">=6.0.0"
+    "node": "14.15.4",
+    "npm": "6.14.10"
   },
   "license": "MIT"
 }
