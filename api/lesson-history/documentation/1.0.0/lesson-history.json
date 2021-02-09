@@ -562,9 +562,6 @@
               "kelas": {
                 "type": "string"
               },
-              "pembimbing": {
-                "type": "string"
-              },
               "students": {
                 "type": "array",
                 "items": {
@@ -582,6 +579,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "teacher": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

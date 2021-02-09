@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "lesson_histories",
+  "collectionName": "teachers",
   "info": {
-    "name": "LessonHistory",
+    "name": "Teacher",
     "description": ""
   },
   "options": {
@@ -11,24 +11,24 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "pelajaran": {
+    "nama": {
       "type": "string",
       "required": true
     },
-    "tanggal": {
-      "type": "string",
-      "required": true
-    },
-    "pengajar": {
-      "type": "string",
-      "required": true
-    },
-    "keterangan": {
+    "alamat": {
       "type": "text"
     },
     "classroom": {
-      "via": "lesson_histories",
+      "via": "teacher",
       "model": "classroom"
+    },
+    "teacher_activities": {
+      "via": "teacher",
+      "collection": "teacher-activity"
+    },
+    "student_aktivities": {
+      "via": "teacher",
+      "collection": "student-aktivity"
     }
   }
 }

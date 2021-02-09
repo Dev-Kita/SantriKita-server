@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "name": "lesson",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "isBukuSetoran": {
+      "type": "boolean",
+      "default": false
+    },
+    "teacher_activities": {
+      "via": "lesson",
+      "collection": "teacher-activity"
+    },
+    "student_aktivities": {
+      "via": "lesson",
+      "collection": "student-aktivity"
+    }
+  }
+}

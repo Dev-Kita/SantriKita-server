@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teacher-activities",
+      "handler": "teacher-activity.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-activities/count",
+      "handler": "teacher-activity.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacher-activities/:id",
+      "handler": "teacher-activity.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teacher-activities",
+      "handler": "teacher-activity.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teacher-activities/:id",
+      "handler": "teacher-activity.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teacher-activities/:id",
+      "handler": "teacher-activity.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

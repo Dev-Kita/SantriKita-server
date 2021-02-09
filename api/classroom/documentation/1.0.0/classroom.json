@@ -526,9 +526,6 @@
           "kelas": {
             "type": "string"
           },
-          "pembimbing": {
-            "type": "string"
-          },
           "students": {
             "type": "array",
             "items": {
@@ -601,6 +598,18 @@
                 },
                 "jenis_kelamin": {
                   "type": "string"
+                },
+                "teacher_activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "student_aktivities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -694,6 +703,47 @@
               }
             }
           },
+          "teacher": {
+            "required": [
+              "id",
+              "nama"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama": {
+                "type": "string"
+              },
+              "alamat": {
+                "type": "string"
+              },
+              "classroom": {
+                "type": "string"
+              },
+              "teacher_activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "student_aktivities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -706,9 +756,6 @@
         ],
         "properties": {
           "kelas": {
-            "type": "string"
-          },
-          "pembimbing": {
             "type": "string"
           },
           "students": {
@@ -728,6 +775,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "teacher": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

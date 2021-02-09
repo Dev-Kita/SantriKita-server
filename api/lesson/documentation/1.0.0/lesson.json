@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/bills": {
+    "/lessons": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Bill"
+                    "$ref": "#/components/schemas/Lesson"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Bill"
+          "Lesson"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Bill"
+                  "$ref": "#/components/schemas/Lesson"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Bill"
+          "Lesson"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBill"
+                "$ref": "#/components/schemas/NewLesson"
               }
             }
           }
         }
       }
     },
-    "/bills/count": {
+    "/lessons/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Bill"
+          "Lesson"
         ],
         "parameters": []
       }
     },
-    "/bills/{id}": {
+    "/lessons/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Bill"
+                  "$ref": "#/components/schemas/Lesson"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Bill"
+          "Lesson"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Bill"
+                  "$ref": "#/components/schemas/Lesson"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Bill"
+          "Lesson"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBill"
+                "$ref": "#/components/schemas/NewLesson"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Bill"
+          "Lesson"
         ],
         "parameters": [
           {
@@ -514,137 +514,113 @@
   },
   "components": {
     "schemas": {
-      "Bill": {
+      "Lesson": {
         "required": [
-          "id"
+          "id",
+          "nama"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "semester": {
-            "type": "integer"
+          "nama": {
+            "type": "string"
           },
-          "tahun": {
-            "type": "integer"
+          "isBukuSetoran": {
+            "type": "boolean",
+            "default": false
           },
-          "nominal": {
-            "type": "integer"
-          },
-          "nominal_dibayar": {
-            "type": "integer",
-            "default": "0"
-          },
-          "tanggal_pembayaran": {
-            "type": "string",
-            "format": "date"
-          },
-          "status": {
-            "type": "string",
-            "default": "Belum Dibayar"
-          },
-          "student": {
-            "required": [
-              "id",
-              "nama",
-              "tahun_masuk",
-              "nis"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nama": {
-                "type": "string"
-              },
-              "tahun_masuk": {
-                "type": "integer"
-              },
-              "tahun_keluar": {
-                "type": "integer"
-              },
-              "user": {
-                "type": "string"
-              },
-              "medical_histories": {
-                "type": "array",
-                "items": {
+          "teacher_activities": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "teacher": {
+                  "type": "string"
+                },
+                "tanggal": {
+                  "type": "string"
+                },
+                "keterangan": {
+                  "type": "string"
+                },
+                "lesson": {
+                  "type": "string"
+                },
+                "students": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "kategori": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "bills": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "achievements": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "violations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "tanggal_lahir": {
-                "type": "string"
-              },
-              "nis": {
-                "type": "integer"
-              },
-              "kelas": {
-                "type": "string"
-              },
-              "kamar": {
-                "type": "string"
-              },
-              "notifications": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "photo": {
-                "type": "string"
-              },
-              "jenis_kelamin": {
-                "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "student_aktivities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
-          "keperluan": {
-            "type": "string"
-          },
-          "keterangan": {
-            "type": "string"
-          },
-          "sisa_pembayaran": {
-            "type": "integer"
+          "student_aktivities": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "lesson": {
+                  "type": "string"
+                },
+                "teacher": {
+                  "type": "string"
+                },
+                "students": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "kategori": {
+                  "type": "string"
+                },
+                "tanggal": {
+                  "type": "string"
+                },
+                "keterangan": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -652,40 +628,29 @@
           }
         }
       },
-      "NewBill": {
+      "NewLesson": {
+        "required": [
+          "nama"
+        ],
         "properties": {
-          "semester": {
-            "type": "integer"
-          },
-          "tahun": {
-            "type": "integer"
-          },
-          "nominal": {
-            "type": "integer"
-          },
-          "nominal_dibayar": {
-            "type": "integer",
-            "default": "0"
-          },
-          "tanggal_pembayaran": {
-            "type": "string",
-            "format": "date"
-          },
-          "status": {
-            "type": "string",
-            "default": "Belum Dibayar"
-          },
-          "student": {
+          "nama": {
             "type": "string"
           },
-          "keperluan": {
-            "type": "string"
+          "isBukuSetoran": {
+            "type": "boolean",
+            "default": false
           },
-          "keterangan": {
-            "type": "string"
+          "teacher_activities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
-          "sisa_pembayaran": {
-            "type": "integer"
+          "student_aktivities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -703,7 +668,7 @@
   },
   "tags": [
     {
-      "name": "Bill"
+      "name": "Lesson"
     }
   ]
 }

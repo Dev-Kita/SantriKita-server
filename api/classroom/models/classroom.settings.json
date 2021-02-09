@@ -16,20 +16,21 @@
       "required": true,
       "unique": true
     },
-    "pembimbing": {
-      "type": "string"
-    },
     "students": {
-      "via": "kelas",
-      "collection": "student"
+      "collection": "student",
+      "via": "kelas"
     },
     "silabuses": {
-      "via": "classrooms",
-      "collection": "silabus"
+      "collection": "silabus",
+      "via": "classrooms"
     },
     "lesson_histories": {
-      "via": "classroom",
-      "collection": "lesson-history"
+      "collection": "lesson-history",
+      "via": "classroom"
+    },
+    "teacher": {
+      "model": "teacher",
+      "via": "classroom"
     }
   }
 }

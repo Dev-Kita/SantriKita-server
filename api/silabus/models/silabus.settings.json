@@ -24,8 +24,8 @@
       "type": "text"
     },
     "classrooms": {
-      "collection": "classroom",
       "via": "silabuses",
+      "collection": "classroom",
       "dominant": true
     }
   }

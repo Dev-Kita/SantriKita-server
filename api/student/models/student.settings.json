@@ -51,8 +51,8 @@
       "required": true
     },
     "kelas": {
-      "model": "classroom",
-      "via": "students"
+      "via": "students",
+      "model": "classroom"
     },
     "kamar": {
       "type": "string"
@@ -72,6 +72,14 @@
     },
     "jenis_kelamin": {
       "type": "string"
+    },
+    "teacher_activities": {
+      "via": "students",
+      "collection": "teacher-activity"
+    },
+    "student_aktivities": {
+      "via": "students",
+      "collection": "student-aktivity"
     }
   }
 }

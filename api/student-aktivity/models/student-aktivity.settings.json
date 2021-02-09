@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_aktivities",
+  "info": {
+    "name": "studentAktivity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "lesson": {
+      "model": "lesson",
+      "via": "student_aktivities"
+    },
+    "teacher": {
+      "model": "teacher",
+      "via": "student_aktivities"
+    },
+    "students": {
+      "collection": "student",
+      "via": "student_aktivities",
+      "dominant": true
+    },
+    "kategori": {
+      "type": "enumeration",
+      "enum": [
+        "setoran",
+        "pelajaran",
+        "dll"
+      ]
+    },
+    "tanggal": {
+      "type": "datetime"
+    },
+    "keterangan": {
+      "type": "text"
+    }
+  }
+}
