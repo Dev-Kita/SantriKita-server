@@ -733,6 +733,9 @@
                   "type": "string"
                 }
               },
+              "user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

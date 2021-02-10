@@ -574,6 +574,9 @@
               "student": {
                 "type": "string"
               },
+              "teacher": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },

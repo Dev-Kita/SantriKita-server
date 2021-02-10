@@ -15,8 +15,8 @@
       "type": "string"
     },
     "teacher": {
-      "model": "teacher",
-      "via": "teacher_activities"
+      "via": "teacher_activities",
+      "model": "teacher"
     },
     "tanggal": {
       "type": "datetime"

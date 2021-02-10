@@ -62,6 +62,10 @@
     "student": {
       "via": "user",
       "model": "student"
+    },
+    "teacher": {
+      "via": "user",
+      "model": "teacher"
     }
   }
 }

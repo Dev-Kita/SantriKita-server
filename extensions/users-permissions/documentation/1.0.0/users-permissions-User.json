@@ -1344,6 +1344,50 @@
                 "type": "string"
               }
             }
+          },
+          "teacher": {
+            "required": [
+              "id",
+              "nama"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama": {
+                "type": "string"
+              },
+              "alamat": {
+                "type": "string"
+              },
+              "classroom": {
+                "type": "string"
+              },
+              "teacher_activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "student_aktivities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1387,6 +1431,9 @@
             "type": "string"
           },
           "student": {
+            "type": "string"
+          },
+          "teacher": {
             "type": "string"
           },
           "created_by": {

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/09/2021 11:13:34 PM"
+    "x-generation-date": "02/10/2021 11:03:06 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9402,6 +9402,9 @@
                   "type": "string"
                 }
               },
+              "user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -10229,6 +10232,9 @@
                   "type": "string"
                 }
               },
+              "user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -10460,6 +10466,9 @@
                 "type": "string"
               },
               "student": {
+                "type": "string"
+              },
+              "teacher": {
                 "type": "string"
               },
               "created_by": {
@@ -11029,6 +11038,9 @@
                   "type": "string"
                 }
               },
+              "user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -11391,6 +11403,57 @@
               }
             }
           },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "student": {
+                "type": "string"
+              },
+              "teacher": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -11422,6 +11485,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "user": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -11688,6 +11754,9 @@
                 "student": {
                   "type": "string"
                 },
+                "teacher": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -11894,6 +11963,50 @@
                 "type": "string"
               }
             }
+          },
+          "teacher": {
+            "required": [
+              "id",
+              "nama"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama": {
+                "type": "string"
+              },
+              "alamat": {
+                "type": "string"
+              },
+              "classroom": {
+                "type": "string"
+              },
+              "teacher_activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "student_aktivities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -11937,6 +12050,9 @@
             "type": "string"
           },
           "student": {
+            "type": "string"
+          },
+          "teacher": {
             "type": "string"
           },
           "created_by": {

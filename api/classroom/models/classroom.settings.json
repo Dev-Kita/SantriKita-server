@@ -29,8 +29,8 @@
       "via": "classroom"
     },
     "teacher": {
-      "model": "teacher",
-      "via": "classroom"
+      "via": "classroom",
+      "model": "teacher"
     }
   }
 }

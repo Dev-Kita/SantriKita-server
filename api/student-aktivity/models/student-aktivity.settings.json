@@ -18,8 +18,8 @@
       "via": "student_aktivities"
     },
     "teacher": {
-      "model": "teacher",
-      "via": "student_aktivities"
+      "via": "student_aktivities",
+      "model": "teacher"
     },
     "students": {
       "collection": "student",

@@ -19,16 +19,21 @@
       "type": "text"
     },
     "classroom": {
-      "via": "teacher",
-      "model": "classroom"
+      "model": "classroom",
+      "via": "teacher"
     },
     "teacher_activities": {
-      "via": "teacher",
-      "collection": "teacher-activity"
+      "collection": "teacher-activity",
+      "via": "teacher"
     },
     "student_aktivities": {
-      "via": "teacher",
-      "collection": "student-aktivity"
+      "collection": "student-aktivity",
+      "via": "teacher"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "teacher"
     }
   }
 }
