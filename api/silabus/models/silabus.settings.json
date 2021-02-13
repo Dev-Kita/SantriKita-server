@@ -24,9 +24,13 @@
       "type": "text"
     },
     "classrooms": {
-      "via": "silabuses",
       "collection": "classroom",
+      "via": "silabuses",
       "dominant": true
+    },
+    "lesson": {
+      "model": "lesson",
+      "via": "silabuses"
     }
   }
 }

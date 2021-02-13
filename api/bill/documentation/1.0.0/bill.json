@@ -614,12 +614,6 @@
               "jenis_kelamin": {
                 "type": "string"
               },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "student_aktivities": {
                 "type": "array",
                 "items": {

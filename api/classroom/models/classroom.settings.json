@@ -21,12 +21,8 @@
       "via": "kelas"
     },
     "silabuses": {
-      "collection": "silabus",
-      "via": "classrooms"
-    },
-    "lesson_histories": {
-      "collection": "lesson-history",
-      "via": "classroom"
+      "via": "classrooms",
+      "collection": "silabus"
     },
     "teacher": {
       "via": "classroom",

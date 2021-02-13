@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/10/2021 11:03:06 AM"
+    "x-generation-date": "02/13/2021 12:34:50 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1563,530 +1563,6 @@
         "summary": "",
         "tags": [
           "Classroom"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/lesson-histories": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Lesson-history"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Lesson-history"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewLesson-history"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/lesson-histories/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Lesson-history"
-        ],
-        "parameters": []
-      }
-    },
-    "/lesson-histories/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Lesson-history"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Lesson-history"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewLesson-history"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a record",
-        "responses": {
-          "200": {
-            "description": "deletes a single record based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Lesson-history"
         ],
         "parameters": [
           {
@@ -5179,530 +4655,6 @@
         "summary": "",
         "tags": [
           "Student"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/teacher-activities": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Teacher-activity"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Teacher-activity"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewTeacher-activity"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/teacher-activities/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Teacher-activity"
-        ],
-        "parameters": []
-      }
-    },
-    "/teacher-activities/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Teacher-activity"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Teacher-activity"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewTeacher-activity"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a record",
-        "responses": {
-          "200": {
-            "description": "deletes a single record based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Teacher-activity"
         ],
         "parameters": [
           {
@@ -8932,12 +7884,6 @@
               "jenis_kelamin": {
                 "type": "string"
               },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "student_aktivities": {
                 "type": "array",
                 "items": {
@@ -9097,12 +8043,6 @@
               },
               "jenis_kelamin": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",
@@ -9268,12 +8208,6 @@
                 "jenis_kelamin": {
                   "type": "string"
                 },
-                "teacher_activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "student_aktivities": {
                   "type": "array",
                   "items": {
@@ -9320,44 +8254,7 @@
                     "type": "string"
                   }
                 },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "lesson_histories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "pelajaran",
-                "tanggal",
-                "pengajar"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "pelajaran": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "pengajar": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "classroom": {
+                "lesson": {
                   "type": "string"
                 },
                 "published_at": {
@@ -9389,12 +8286,6 @@
               },
               "classroom": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",
@@ -9442,120 +8333,7 @@
               "type": "string"
             }
           },
-          "lesson_histories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "teacher": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Lesson-history": {
-        "required": [
-          "id",
-          "pelajaran",
-          "tanggal",
-          "pengajar"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "pelajaran": {
-            "type": "string"
-          },
-          "tanggal": {
-            "type": "string"
-          },
-          "pengajar": {
-            "type": "string"
-          },
-          "keterangan": {
-            "type": "string"
-          },
-          "classroom": {
-            "required": [
-              "id",
-              "kelas"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "kelas": {
-                "type": "string"
-              },
-              "students": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "silabuses": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "teacher": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewLesson-history": {
-        "required": [
-          "pelajaran",
-          "tanggal",
-          "pengajar"
-        ],
-        "properties": {
-          "pelajaran": {
-            "type": "string"
-          },
-          "tanggal": {
-            "type": "string"
-          },
-          "pengajar": {
-            "type": "string"
-          },
-          "keterangan": {
-            "type": "string"
-          },
-          "classroom": {
             "type": "string"
           },
           "published_at": {
@@ -9586,7 +8364,7 @@
             "type": "boolean",
             "default": false
           },
-          "teacher_activities": {
+          "student_aktivities": {
             "type": "array",
             "items": {
               "required": [
@@ -9596,19 +8374,10 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "lesson": {
                   "type": "string"
                 },
                 "teacher": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "lesson": {
                   "type": "string"
                 },
                 "students": {
@@ -9618,6 +8387,18 @@
                   }
                 },
                 "kategori": {
+                  "type": "string"
+                },
+                "tanggal": {
+                  "type": "string"
+                },
+                "keterangan": {
+                  "type": "string"
+                },
+                "guru_title": {
+                  "type": "string"
+                },
+                "siswa_title": {
                   "type": "string"
                 },
                 "published_at": {
@@ -9632,7 +8413,7 @@
               }
             }
           },
-          "student_aktivities": {
+          "silabuses": {
             "type": "array",
             "items": {
               "required": [
@@ -9642,28 +8423,25 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "pelajaran": {
                   "type": "string"
                 },
-                "lesson": {
+                "bab": {
                   "type": "string"
                 },
-                "teacher": {
+                "kompetensi_dasar": {
                   "type": "string"
                 },
-                "students": {
+                "keterangan": {
+                  "type": "string"
+                },
+                "classrooms": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "kategori": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "keterangan": {
+                "lesson": {
                   "type": "string"
                 },
                 "published_at": {
@@ -9696,13 +8474,13 @@
             "type": "boolean",
             "default": false
           },
-          "teacher_activities": {
+          "student_aktivities": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "student_aktivities": {
+          "silabuses": {
             "type": "array",
             "items": {
               "type": "string"
@@ -9813,12 +8591,6 @@
               },
               "jenis_kelamin": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",
@@ -9984,12 +8756,6 @@
               "jenis_kelamin": {
                 "type": "string"
               },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "student_aktivities": {
                 "type": "array",
                 "items": {
@@ -10094,12 +8860,6 @@
                     "type": "string"
                   }
                 },
-                "lesson_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "teacher": {
                   "type": "string"
                 },
@@ -10112,6 +8872,44 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "lesson": {
+            "required": [
+              "id",
+              "nama"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama": {
+                "type": "string"
+              },
+              "isBukuSetoran": {
+                "type": "boolean"
+              },
+              "student_aktivities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "silabuses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -10141,6 +8939,9 @@
               "type": "string"
             }
           },
+          "lesson": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -10161,9 +8962,6 @@
           "id": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
-          },
           "lesson": {
             "required": [
               "id",
@@ -10179,13 +8977,13 @@
               "isBukuSetoran": {
                 "type": "boolean"
               },
-              "teacher_activities": {
+              "student_aktivities": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "student_aktivities": {
+              "silabuses": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -10219,12 +9017,6 @@
               },
               "classroom": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",
@@ -10319,12 +9111,6 @@
                 "jenis_kelamin": {
                   "type": "string"
                 },
-                "teacher_activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "student_aktivities": {
                   "type": "array",
                   "items": {
@@ -10358,6 +9144,12 @@
           "keterangan": {
             "type": "string"
           },
+          "guru_title": {
+            "type": "string"
+          },
+          "siswa_title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -10366,9 +9158,6 @@
       },
       "NewStudent-aktivity": {
         "properties": {
-          "title": {
-            "type": "string"
-          },
           "lesson": {
             "type": "string"
           },
@@ -10394,6 +9183,12 @@
             "format": "date-time"
           },
           "keterangan": {
+            "type": "string"
+          },
+          "guru_title": {
+            "type": "string"
+          },
+          "siswa_title": {
             "type": "string"
           },
           "published_at": {
@@ -10680,12 +9475,6 @@
                   "type": "string"
                 }
               },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "teacher": {
                 "type": "string"
               },
@@ -10810,52 +9599,6 @@
           "jenis_kelamin": {
             "type": "string"
           },
-          "teacher_activities": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "teacher": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "lesson": {
-                  "type": "string"
-                },
-                "students": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "kategori": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "student_aktivities": {
             "type": "array",
             "items": {
@@ -10866,9 +9609,6 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
-                  "type": "string"
-                },
                 "lesson": {
                   "type": "string"
                 },
@@ -10888,6 +9628,12 @@
                   "type": "string"
                 },
                 "keterangan": {
+                  "type": "string"
+                },
+                "guru_title": {
+                  "type": "string"
+                },
+                "siswa_title": {
                   "type": "string"
                 },
                 "published_at": {
@@ -10973,272 +9719,11 @@
           "jenis_kelamin": {
             "type": "string"
           },
-          "teacher_activities": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "student_aktivities": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Teacher-activity": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "teacher": {
-            "required": [
-              "id",
-              "nama"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nama": {
-                "type": "string"
-              },
-              "alamat": {
-                "type": "string"
-              },
-              "classroom": {
-                "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "student_aktivities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "user": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "tanggal": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "keterangan": {
-            "type": "string"
-          },
-          "lesson": {
-            "required": [
-              "id",
-              "nama"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nama": {
-                "type": "string"
-              },
-              "isBukuSetoran": {
-                "type": "boolean"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "student_aktivities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "students": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "nama",
-                "tahun_masuk",
-                "nis"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama": {
-                  "type": "string"
-                },
-                "tahun_masuk": {
-                  "type": "integer"
-                },
-                "tahun_keluar": {
-                  "type": "integer"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "medical_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "bills": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "achievements": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "violations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tanggal_lahir": {
-                  "type": "string"
-                },
-                "nis": {
-                  "type": "integer"
-                },
-                "kelas": {
-                  "type": "string"
-                },
-                "kamar": {
-                  "type": "string"
-                },
-                "notifications": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "photo": {
-                  "type": "string"
-                },
-                "jenis_kelamin": {
-                  "type": "string"
-                },
-                "teacher_activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "student_aktivities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "kategori": {
-            "type": "string",
-            "enum": [
-              "setoran",
-              "pelajaran",
-              "dll"
-            ]
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewTeacher-activity": {
-        "properties": {
-          "title": {
-            "type": "string"
-          },
-          "teacher": {
-            "type": "string"
-          },
-          "tanggal": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "keterangan": {
-            "type": "string"
-          },
-          "lesson": {
-            "type": "string"
-          },
-          "students": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "kategori": {
-            "type": "string",
-            "enum": [
-              "setoran",
-              "pelajaran",
-              "dll"
-            ]
           },
           "published_at": {
             "type": "string",
@@ -11291,12 +9776,6 @@
                   "type": "string"
                 }
               },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "teacher": {
                 "type": "string"
               },
@@ -11311,52 +9790,6 @@
               }
             }
           },
-          "teacher_activities": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "teacher": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "lesson": {
-                  "type": "string"
-                },
-                "students": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "kategori": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "student_aktivities": {
             "type": "array",
             "items": {
@@ -11367,9 +9800,6 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
-                  "type": "string"
-                },
                 "lesson": {
                   "type": "string"
                 },
@@ -11389,6 +9819,12 @@
                   "type": "string"
                 },
                 "keterangan": {
+                  "type": "string"
+                },
+                "guru_title": {
+                  "type": "string"
+                },
+                "siswa_title": {
                   "type": "string"
                 },
                 "published_at": {
@@ -11473,12 +9909,6 @@
           },
           "classroom": {
             "type": "string"
-          },
-          "teacher_activities": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "student_aktivities": {
             "type": "array",
@@ -11592,12 +10022,6 @@
               },
               "jenis_kelamin": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",
@@ -11941,12 +10365,6 @@
               "jenis_kelamin": {
                 "type": "string"
               },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "student_aktivities": {
                 "type": "array",
                 "items": {
@@ -11981,12 +10399,6 @@
               },
               "classroom": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",

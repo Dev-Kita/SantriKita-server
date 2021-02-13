@@ -530,7 +530,7 @@
             "type": "boolean",
             "default": false
           },
-          "teacher_activities": {
+          "student_aktivities": {
             "type": "array",
             "items": {
               "required": [
@@ -540,19 +540,10 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "lesson": {
                   "type": "string"
                 },
                 "teacher": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "lesson": {
                   "type": "string"
                 },
                 "students": {
@@ -562,6 +553,18 @@
                   }
                 },
                 "kategori": {
+                  "type": "string"
+                },
+                "tanggal": {
+                  "type": "string"
+                },
+                "keterangan": {
+                  "type": "string"
+                },
+                "guru_title": {
+                  "type": "string"
+                },
+                "siswa_title": {
                   "type": "string"
                 },
                 "published_at": {
@@ -576,7 +579,7 @@
               }
             }
           },
-          "student_aktivities": {
+          "silabuses": {
             "type": "array",
             "items": {
               "required": [
@@ -586,28 +589,25 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "pelajaran": {
                   "type": "string"
                 },
-                "lesson": {
+                "bab": {
                   "type": "string"
                 },
-                "teacher": {
+                "kompetensi_dasar": {
                   "type": "string"
                 },
-                "students": {
+                "keterangan": {
+                  "type": "string"
+                },
+                "classrooms": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "kategori": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "keterangan": {
+                "lesson": {
                   "type": "string"
                 },
                 "published_at": {
@@ -640,13 +640,13 @@
             "type": "boolean",
             "default": false
           },
-          "teacher_activities": {
+          "student_aktivities": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "student_aktivities": {
+          "silabuses": {
             "type": "array",
             "items": {
               "type": "string"

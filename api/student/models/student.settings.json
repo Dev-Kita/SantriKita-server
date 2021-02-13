@@ -73,10 +73,6 @@
     "jenis_kelamin": {
       "type": "string"
     },
-    "teacher_activities": {
-      "via": "students",
-      "collection": "teacher-activity"
-    },
     "student_aktivities": {
       "via": "students",
       "collection": "student-aktivity"

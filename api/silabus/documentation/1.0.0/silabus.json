@@ -560,12 +560,6 @@
                     "type": "string"
                   }
                 },
-                "lesson_histories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "teacher": {
                   "type": "string"
                 },
@@ -578,6 +572,44 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "lesson": {
+            "required": [
+              "id",
+              "nama"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama": {
+                "type": "string"
+              },
+              "isBukuSetoran": {
+                "type": "boolean"
+              },
+              "student_aktivities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "silabuses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -606,6 +638,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "lesson": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

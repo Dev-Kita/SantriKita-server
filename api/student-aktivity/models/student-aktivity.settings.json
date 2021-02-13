@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "student_aktivities",
   "info": {
-    "name": "studentAktivity"
+    "name": "studentAktivity",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,16 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "lesson": {
       "model": "lesson",
       "via": "student_aktivities"
     },
     "teacher": {
-      "via": "student_aktivities",
-      "model": "teacher"
+      "model": "teacher",
+      "via": "student_aktivities"
     },
     "students": {
       "collection": "student",
@@ -39,6 +37,12 @@
     },
     "keterangan": {
       "type": "text"
+    },
+    "guru_title": {
+      "type": "string"
+    },
+    "siswa_title": {
+      "type": "string"
     }
   }
 }

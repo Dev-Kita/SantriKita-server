@@ -786,12 +786,6 @@
                   "type": "string"
                 }
               },
-              "lesson_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "teacher": {
                 "type": "string"
               },
@@ -916,52 +910,6 @@
           "jenis_kelamin": {
             "type": "string"
           },
-          "teacher_activities": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "teacher": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "lesson": {
-                  "type": "string"
-                },
-                "students": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "kategori": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "student_aktivities": {
             "type": "array",
             "items": {
@@ -972,9 +920,6 @@
                 "id": {
                   "type": "string"
                 },
-                "title": {
-                  "type": "string"
-                },
                 "lesson": {
                   "type": "string"
                 },
@@ -994,6 +939,12 @@
                   "type": "string"
                 },
                 "keterangan": {
+                  "type": "string"
+                },
+                "guru_title": {
+                  "type": "string"
+                },
+                "siswa_title": {
                   "type": "string"
                 },
                 "published_at": {
@@ -1078,12 +1029,6 @@
           },
           "jenis_kelamin": {
             "type": "string"
-          },
-          "teacher_activities": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "student_aktivities": {
             "type": "array",

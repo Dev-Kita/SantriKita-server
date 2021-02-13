@@ -22,13 +22,9 @@
       "model": "classroom",
       "via": "teacher"
     },
-    "teacher_activities": {
-      "collection": "teacher-activity",
-      "via": "teacher"
-    },
     "student_aktivities": {
-      "collection": "student-aktivity",
-      "via": "teacher"
+      "via": "teacher",
+      "collection": "student-aktivity"
     },
     "user": {
       "plugin": "users-permissions",

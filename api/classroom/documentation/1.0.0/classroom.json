@@ -599,12 +599,6 @@
                 "jenis_kelamin": {
                   "type": "string"
                 },
-                "teacher_activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "student_aktivities": {
                   "type": "array",
                   "items": {
@@ -651,44 +645,7 @@
                     "type": "string"
                   }
                 },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "lesson_histories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "pelajaran",
-                "tanggal",
-                "pengajar"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "pelajaran": {
-                  "type": "string"
-                },
-                "tanggal": {
-                  "type": "string"
-                },
-                "pengajar": {
-                  "type": "string"
-                },
-                "keterangan": {
-                  "type": "string"
-                },
-                "classroom": {
+                "lesson": {
                   "type": "string"
                 },
                 "published_at": {
@@ -720,12 +677,6 @@
               },
               "classroom": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",
@@ -768,12 +719,6 @@
             }
           },
           "silabuses": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "lesson_histories": {
             "type": "array",
             "items": {
               "type": "string"

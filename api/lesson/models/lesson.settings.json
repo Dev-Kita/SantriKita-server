@@ -19,13 +19,13 @@
       "type": "boolean",
       "default": false
     },
-    "teacher_activities": {
-      "via": "lesson",
-      "collection": "teacher-activity"
-    },
     "student_aktivities": {
       "via": "lesson",
       "collection": "student-aktivity"
+    },
+    "silabuses": {
+      "via": "lesson",
+      "collection": "silabus"
     }
   }
 }

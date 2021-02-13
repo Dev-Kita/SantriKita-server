@@ -535,9 +535,6 @@
           "id": {
             "type": "string"
           },
-          "title": {
-            "type": "string"
-          },
           "lesson": {
             "required": [
               "id",
@@ -553,13 +550,13 @@
               "isBukuSetoran": {
                 "type": "boolean"
               },
-              "teacher_activities": {
+              "student_aktivities": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "student_aktivities": {
+              "silabuses": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -593,12 +590,6 @@
               },
               "classroom": {
                 "type": "string"
-              },
-              "teacher_activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "student_aktivities": {
                 "type": "array",
@@ -693,12 +684,6 @@
                 "jenis_kelamin": {
                   "type": "string"
                 },
-                "teacher_activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "student_aktivities": {
                   "type": "array",
                   "items": {
@@ -732,6 +717,12 @@
           "keterangan": {
             "type": "string"
           },
+          "guru_title": {
+            "type": "string"
+          },
+          "siswa_title": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -740,9 +731,6 @@
       },
       "NewStudent-aktivity": {
         "properties": {
-          "title": {
-            "type": "string"
-          },
           "lesson": {
             "type": "string"
           },
@@ -768,6 +756,12 @@
             "format": "date-time"
           },
           "keterangan": {
+            "type": "string"
+          },
+          "guru_title": {
+            "type": "string"
+          },
+          "siswa_title": {
             "type": "string"
           },
           "published_at": {
