@@ -612,7 +612,12 @@
                   "type": "string"
                 },
                 "jenis": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "Umum",
+                    "Parah",
+                    "Bawaan"
+                  ]
                 },
                 "published_at": {
                   "type": "string"
@@ -933,7 +938,12 @@
                   }
                 },
                 "kategori": {
-                  "type": "string"
+                  "type": "string",
+                  "enum": [
+                    "setoran",
+                    "pelajaran",
+                    "dll"
+                  ]
                 },
                 "tanggal": {
                   "type": "string"
